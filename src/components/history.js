@@ -10,9 +10,9 @@ export default function History () {
         <>
             <label style={{alignSelf:'flex-start'}}>History</label>
             <hr/>
-           {state.map((item)=>{
-                return <Historyitem item={item} />
-            })}
+           {
+                state.length>=1?state.map((item)=>{return <Historyitem item={item} />}):<label style={{display:'flex',flexDirection:'row',justifyContent:'center'}}>No Transactions</label>
+           }
         </>
     )
 }

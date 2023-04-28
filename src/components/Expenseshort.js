@@ -8,14 +8,21 @@ export default function Expense() {
     const {state} = useContext(Datacontext);
     let income=0;
     let expense=0;
-    state.map((item)=>{
-        if(item.price>0){
-            income+=parseInt(item.price);
-        }
-        else{
-            expense+=parseInt(item.price);
-        }
-    })
+    if(state.length>=1){
+
+        state.map((item)=>{
+            if(item.price>0){
+                income+=parseInt(item.price);
+            }
+            else{
+                expense+=parseInt(item.price);
+            }
+        })
+    }
+    else{
+        income=0
+        expense=0
+    }
 
     return (
         <div className='expense'>

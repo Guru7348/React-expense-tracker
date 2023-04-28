@@ -5,7 +5,8 @@ export default function Balance (){
 
     const {state} = useContext(Datacontext);
     let balance = 0;
-    state.map((item)=>{balance+=parseInt(item.price)})
+    if(state.length>=1){state.map((item)=>{balance+=parseInt(item.price)})}
+    else balance=0
 
     console.log(state)
     return (
