@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.App{
+    width: 30vw;
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    margin: 5%;
+    font-size:xx-large;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.expensepart{
+    display:flex;
+    flex-flow:column;
+    margin: 10px;
+    font-size: x-large;
+    width: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.expense{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    box-shadow: 2px 2px 1px 1px gainsboro;
+    background-color:antiquewhite;
+    margin: 10px;
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.item{
+    /* border: 0px; */
+    display:'flex';
+    flex-direction:'row';
+    width:'100%';
+    padding: 10px;
+    border-right: 4px solid red;
+    box-shadow: 2px 2px 1px 1px gainsboro;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itemdes{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: row;
+    width: 100%;
+    font-size: larger;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.x{
+    display: none;
+}
+.item:hover > .x {
+    display: block;
+}
+
+hr{
+    background-color: black;
+    width: 100%;
+    height: 0.1px;
+}
+
+label{
+    font-size: x-large;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+input{
+    background-color: inherit;
+    border-radius: 6px;
+    height: 25px;
+    border-color: darkgrey;
+    margin: 5px;
+    padding: 3px;
+}
+
+#submit{
+    background-color:rgb(96, 84, 175);
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    font-size: medium;
 }

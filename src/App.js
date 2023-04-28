@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Expenseshort from './components/Expenseshort'
+import Add from './components/addtransaction';
+import Balance from './components/balance'
+import History from './components/history'
+import Data from './context/contextprovider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Data className="App">
+        <label style={{display:'flex',flexDirection:'row',justifyContent:'center',fontSize:'xx-large'}}>Expenses Tracker</label>
+      <>
+        <Balance/>
+        <Expenseshort/>
+        <History/>
+        <Add/>
+      </>
+    </Data>
   );
 }
 
