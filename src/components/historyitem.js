@@ -19,7 +19,7 @@ export default function Item({item}) {
 
     return (
         <div className='item' style={style} key={item.id}>
-            <label className='x' style={{backgroundColor:'red',fontSize:'medium',alignSelf:'center',position:'fixed',padding:'5px',borderRadius:'5px'}} onClick={deletetrans}>X</label>
+            <label className='x' style={{backgroundColor:'red',fontSize:'medium',alignSelf:'center',position:'relative',padding:'5px',borderRadius:'5px'}} onClick={deletetrans}>X</label>
             <div className='itemdes' ><span>{item.name}</span><span>&#8377;{Math.abs(item.price)}</span></div>
         </div>
     )

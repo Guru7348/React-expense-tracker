@@ -60,8 +60,9 @@ body{
 .x{
     display: none;
 }
-.item:hover > .x {
-    display: block;
+.item:hover  .x {
+    display:block;
+
 }
 
 hr{

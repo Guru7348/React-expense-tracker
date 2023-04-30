@@ -4,6 +4,7 @@ import Add from './components/addtransaction';
 import Balance from './components/balance'
 import History from './components/history'
 import Data from './context/contextprovider';
+import Chart from './components/expense-chart';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Expenseshort/>
         <History/>
         <Add/>
+        <Chart/>
       </>
     </Data>
   );
